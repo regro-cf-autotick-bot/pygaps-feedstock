@@ -1,5 +1,5 @@
 {% set name = "pygaps" %}
-{% set version = "4.0.2" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygaps-{{ version }}.tar.gz
-  sha256: 0914aa95ebdf8aa08276f9823d42fcc02c2b48538e3dabc11d06dc25ebde08ba
+  sha256: fb13d353bad893a363ffc34ed8459c91429c6162b8d6992649ef7acef5a62611
 
 build:
   noarch: python
@@ -19,9 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.6
   run:
-    - python >=3.7
+    - python >=3.6
     - numpy >=1.16.5
     - pandas
     - scipy >=1.6
@@ -48,9 +48,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A framework for processing adsorption data for porous materials"
-  doc_url: "https://pygaps.readthedocs.io"
-  dev_url: "https://github.com/pauliacomi/pygaps"
+  summary: A framework for processing adsorption data for porous materials
+  doc_url: https://pygaps.readthedocs.io
+  dev_url: https://github.com/pauliacomi/pygaps
 
 extra:
   recipe-maintainers:
