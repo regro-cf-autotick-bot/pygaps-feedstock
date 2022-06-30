@@ -1,5 +1,5 @@
 {% set name = "pygaps" %}
-{% set version = "4.1.2" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygaps-{{ version }}.tar.gz
-  sha256: 3c53678a5d58aa1cf95a1bcb7f759f1249733801bfbe9a8fb06c02ee4a2417e3
+  sha256: 4611fb464675a737bc2c8c8824726d61ae482880ec2e1550bdd068fc076a965f
 
 build:
   noarch: python
