@@ -22,18 +22,18 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
+    - importlib-resources
     - numpy >=1.16.5
     - pandas >=1.1
     - scipy >=1.6
     - matplotlib-base
     - coolprop >=6.0
     - adsorption-file-parser >=0.1.3
-    - gemmi
-    - importlib-resources
-    - requests
     - xlrd >=1.1
     - xlwt >=1.3
     - openpyxl
+    - gemmi
+    - requests
 
 test:
   imports:
