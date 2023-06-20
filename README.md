@@ -1,11 +1,11 @@
-About pygaps
-============
+About pygaps-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygaps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pauliacomi/pygaps
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygaps-feedstock/blob/main/LICENSE.txt)
 
 Summary: A framework for processing adsorption data for porous materials
 
