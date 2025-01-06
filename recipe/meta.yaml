@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygaps-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygaps-{{ version }}.tar.gz
   sha256: c31e3a52e8cd23a3f10152d19a2675945964fc9bce29256a156894700a8e1eaf
 
 build:
@@ -14,15 +14,15 @@ build:
   entry_points:
     - pygaps = pygaps.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - importlib-resources
     - numpy >=1.16.5
     - pandas >=1.1
@@ -44,6 +44,7 @@ test:
     - pygaps --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pauliacomi/pygaps
